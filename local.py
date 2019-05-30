@@ -26,8 +26,19 @@ if os.getenv('TAIGA_SSL').lower() == 'true':
 
 SECRET_KEY = os.getenv('TAIGA_SECRET_KEY')
 
+# Email settings
+
+EMAIL_BACKEND = os.getenv('TAIGA_EMAIL_BACKEND')
+EMAIL_USE_TLS = (os.getenv('TAIGA_EMAIL_USE_TLS').lower() == 'true')
+EMAIL_USE_SSL = (os.getenv('TAIGA_EMAIL_USE_SSL').lower() == 'true')
+EMAIL_HOST = os.getenv('TAIGA_EMAIL_HOST')
+EMAIL_PORT = int(os.getenv('TAIGA_EMAIL_PORT'))
+EMAIL_HOST_USER = os.getenv('TAIGA_EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('TAIGA_EMAIL_HOST_PASSWORD')
+
 # Enable or disable public registration
-PUBLIC_REGISTER_ENABLED = (os.getenv('TAIGA_PUBLIC_REGISTER_ENABLED').lower() == 'true')
+PUBLIC_REGISTER_ENABLED = (
+        os.getenv('TAIGA_PUBLIC_REGISTER_ENABLED').lower() == 'true')
 
 # Enable or disable debugging
 DEBUG = (os.getenv('TAIGA_BACKEND_DEBUG').lower() == 'true')
