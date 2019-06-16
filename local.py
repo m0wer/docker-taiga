@@ -28,6 +28,7 @@ SECRET_KEY = os.getenv('TAIGA_SECRET_KEY')
 
 # Email settings
 
+DEFAULT_FROM_EMAIL = os.getenv('TAIGA_DEFAULT_FROM_EMAIL')
 EMAIL_BACKEND = os.getenv('TAIGA_EMAIL_BACKEND')
 EMAIL_USE_TLS = (os.getenv('TAIGA_EMAIL_USE_TLS').lower() == 'true')
 EMAIL_USE_SSL = (os.getenv('TAIGA_EMAIL_USE_SSL').lower() == 'true')
