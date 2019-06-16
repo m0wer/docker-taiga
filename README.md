@@ -1,7 +1,7 @@
 # taiga-docker
 
 A small Docker Image for the open-source project management software Taiga.io
-- compressed image size is 120 MB. The recipe is based on the existing recipe
+- compressed image size is 145 MB. The recipe is based on the existing recipe
 by [benhutchins](https://github.com/benhutchins): see
 <https://github.com/benhutchins/docker-taiga> for his approach. Then forked
 from [fanningert/docker-taiga](https://github.com/fanningert/docker-taiga)
@@ -47,6 +47,18 @@ Important environment parameters for configuration:
 - `TAIGA_DB_NAME`: Defines the database name on the PostgreSQL instance (default: `postgres`).
 - `TAIGA_DB_USER`: Defines the database username for PostgreSQL connections (default: `postgres`).
 - `TAIGA_DB_PASSWORD`: Defines the password for database connections (default: `!!!PLEASE-REPLACE-ME!!!`).
+- `ENV TAIGA_DEFAULT_FROM_EMAIL`: Default "from" email address for notification
+  emails (default: `john@doe.com`).
+- `ENV TAIGA_EMAIL_BACKEND`: Backend for sending emails (default:
+   `django.core.mail.backends.smtp.EmailBackend`).
+- `ENV TAIGA_EMAIL_USE_TLS`: Boolean to use or not TLS with the email server
+   (default: `false`).
+- `ENV TAIGA_EMAIL_USE_SSL`: Boolean to use or not SSL with the email server
+   (default: `false`).
+- `ENV TAIGA_EMAIL_HOST`: Email server host (default: `localhost`).
+- `ENV TAIGA_EMAIL_PORT`: Email server port (default: `25`).
+- `ENV TAIGA_EMAIL_USER`: Email server user, if login is required.
+- `ENV TAIGA_EMAIL_PASSWORD`: Email server password, if login is required.
 - `TAIGA_PUBLIC_REGISTER_ENABLED`: Defines whether new user registrations are enabled (default: `false`).
 - `TAIGA_BACKEND_DEBUG`: Enables or disables backend debugging (default: `false` ).
 - `TAIGA_FRONTEND_DEBUG`: Enables or disables frontend debugging (default: `false`).
