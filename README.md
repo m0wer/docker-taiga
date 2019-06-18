@@ -49,18 +49,18 @@ Important environment parameters for configuration:
 - `TAIGA_DB_NAME`: Defines the database name on the PostgreSQL instance (default: `postgres`).
 - `TAIGA_DB_USER`: Defines the database username for PostgreSQL connections (default: `postgres`).
 - `TAIGA_DB_PASSWORD`: Defines the password for database connections (default: `!!!PLEASE-REPLACE-ME!!!`).
-- `ENV TAIGA_DEFAULT_FROM_EMAIL`: Default "from" email address for notification
+- `TAIGA_DEFAULT_FROM_EMAIL`: Default "from" email address for notification
   emails (default: `john@doe.com`).
-- `ENV TAIGA_EMAIL_BACKEND`: Backend for sending emails (default:
+- `TAIGA_EMAIL_BACKEND`: Backend for sending emails (default:
    `django.core.mail.backends.smtp.EmailBackend`).
-- `ENV TAIGA_EMAIL_USE_TLS`: Boolean to use or not TLS with the email server
+- `TAIGA_EMAIL_USE_TLS`: Boolean to use or not TLS with the email server
    (default: `false`).
-- `ENV TAIGA_EMAIL_USE_SSL`: Boolean to use or not SSL with the email server
+- `TAIGA_EMAIL_USE_SSL`: Boolean to use or not SSL with the email server
    (default: `false`).
-- `ENV TAIGA_EMAIL_HOST`: Email server host (default: `localhost`).
-- `ENV TAIGA_EMAIL_PORT`: Email server port (default: `25`).
-- `ENV TAIGA_EMAIL_USER`: Email server user, if login is required.
-- `ENV TAIGA_EMAIL_PASSWORD`: Email server password, if login is required.
+- `TAIGA_EMAIL_HOST`: Email server host (default: `localhost`).
+- `TAIGA_EMAIL_PORT`: Email server port (default: `25`).
+- `TAIGA_EMAIL_USER`: Email server user, if login is required.
+- `TAIGA_EMAIL_PASSWORD`: Email server password, if login is required.
 - `TAIGA_PUBLIC_REGISTER_ENABLED`: Defines whether new user registrations are enabled (default: `false`).
 - `TAIGA_BACKEND_DEBUG`: Enables or disables backend debugging (default: `false` ).
 - `TAIGA_FRONTEND_DEBUG`: Enables or disables frontend debugging (default: `false`).
