@@ -5,7 +5,7 @@
 [![ImageLayers](https://images.microbadger.com/badges/image/m0wer/docker-taiga.svg)](https://microbadger.com/#/images/m0wer/docker-taiga)
 
 A small Docker Image for the open-source project management software Taiga.io
-- compressed image size is 145 MB. The recipe is based on the existing recipe
+- The recipe is based on the existing recipe
 by [benhutchins](https://github.com/benhutchins): see
 <https://github.com/benhutchins/docker-taiga> for his approach. Then forked
 from [fanningert/docker-taiga](https://github.com/fanningert/docker-taiga)
