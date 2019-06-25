@@ -20,6 +20,7 @@ m0wer/docker-taiga | latest      | 4.2.7
 m0wer/docker-taiga | v4.2.7      | 4.2.7
 ...                | ...         | ...
 m0wer/docker-taiga | v4.2.1      | 4.2.1
+m0wer/docker-taiga | test        | ?
 
 See: <https://hub.docker.com/r/m0wer/docker-taiga/>
 
