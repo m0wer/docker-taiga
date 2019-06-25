@@ -18,7 +18,7 @@ Image Name  | Tag        | Taiga Version
 ------------|------------|---------------
 m0wer/docker-taiga | latest      | 4.2.7
 m0wer/docker-taiga | v4.2.7      | 4.2.7
-.                  | .           | .
+...                | ...         | ...
 m0wer/docker-taiga | v4.2.1      | 4.2.1
 
 See: <https://hub.docker.com/r/m0wer/docker-taiga/>
