@@ -2,7 +2,7 @@ FROM python:3.6-alpine
 MAINTAINER m0wer <m0wer@autistici.org>
 
 # Define build arguments: Taiga version
-ARG VERSION=4.2.7
+ARG VERSION=4.2.10
 
 # Install necessary packages
 RUN apk update &&\
