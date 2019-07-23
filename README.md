@@ -14,14 +14,14 @@ since it was unmaintained.
 Tested / supported versions of Taiga:
 
 - Version 3.2.2
-- Version 4.2.1 to 4.2.10
+- Version 4.2.1 to 4.2.11
 
 ## Available Docker Images at DockerHub
 
 Image Name  | Tag        | Taiga Version
 ------------|------------|---------------
-m0wer/docker-taiga | latest      | 4.2.10
-m0wer/docker-taiga | v4.2.10      | 4.2.10
+m0wer/docker-taiga | latest      | 4.2.11
+m0wer/docker-taiga | v4.2.11      | 4.2.11
 ...                | ...         | ...
 m0wer/docker-taiga | v4.2.1      | 4.2.1
 m0wer/docker-taiga | test        | ?
