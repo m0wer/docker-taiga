@@ -96,7 +96,7 @@ postgres:
     - taiga-db:/var/lib/postgresql/data
 
 taiga:
-  image: fanningert/docker-taiga
+  image: m0wer/docker-taiga
   ports:
     - 80:80
   links:
