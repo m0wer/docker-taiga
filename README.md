@@ -1,9 +1,5 @@
 # taiga-docker
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/m0wer/docker-taiga.svg)](https://hub.docker.com/r/m0wer/docker-taiga/)
-[![Docker Stars](https://img.shields.io/docker/stars/m0wer/docker-taiga.svg)](https://hub.docker.com/r/m0wer/docker-taiga/)
-[![ImageLayers](https://images.microbadger.com/badges/image/m0wer/docker-taiga.svg)](https://microbadger.com/#/images/m0wer/docker-taiga)
-
 A small Docker Image for the open-source project management software Taiga.io
 - The recipe is based on the existing recipe
 by [benhutchins](https://github.com/benhutchins): see
