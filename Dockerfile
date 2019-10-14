@@ -6,7 +6,7 @@ ARG VERSION=4.2.14
 
 # Install necessary packages
 RUN apk update &&\
-    apk add ca-certificates wget nginx git postgresql-dev musl-dev gcc jpeg-dev zlib-dev libxml2-dev libxslt-dev libffi-dev &&\
+    apk add ca-certificates wget nginx git postgresql-dev musl-dev gcc g++ jpeg-dev zlib-dev libxml2-dev libxslt-dev libffi-dev &&\
     update-ca-certificates
 
 # Download taiga.io backend and frontend
