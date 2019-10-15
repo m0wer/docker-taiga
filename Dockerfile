@@ -6,7 +6,7 @@ ARG VERSION=4.2.14
 
 # Install necessary packages
 RUN apk update &&\
-    apk add ca-certificates wget nginx git postgresql-dev musl-dev gcc g++ jpeg-dev zlib-dev libxml2-dev libxslt-dev libffi-dev &&\
+    apk add --no-cache ca-certificates wget nginx git postgresql-dev musl-dev gcc g++ jpeg-dev zlib-dev libxml2-dev libxslt-dev libffi-dev &&\
     update-ca-certificates
 
 # Download taiga.io backend and frontend
@@ -71,7 +71,7 @@ COPY local.py /taiga.io/presets/local.py
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Remove all packages that are not required anymore
-RUN apk del gcc wget git musl-dev libxml2-dev
+RUN apk del gcc wget git musl-dev libxml2-dev g++
 RUN apk add gettext
 
 # Copy files for startup
