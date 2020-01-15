@@ -56,8 +56,8 @@ Important environment parameters for configuration:
    (default: `false`).
 - `TAIGA_EMAIL_HOST`: Email server host (default: `localhost`).
 - `TAIGA_EMAIL_PORT`: Email server port (default: `25`).
-- `TAIGA_EMAIL_USER`: Email server user, if login is required.
-- `TAIGA_EMAIL_PASSWORD`: Email server password, if login is required.
+- `TAIGA_EMAIL_HOST_USER`: Email server user, if login is required.
+- `TAIGA_EMAIL_HOST_PASSWORD`: Email server password, if login is required.
 - `TAIGA_PUBLIC_REGISTER_ENABLED`: Defines whether new user registrations are enabled (default: `false`).
 - `TAIGA_BACKEND_DEBUG`: Enables or disables backend debugging (default: `false` ).
 - `TAIGA_FRONTEND_DEBUG`: Enables or disables frontend debugging (default: `false`).
