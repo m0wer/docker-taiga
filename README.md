@@ -82,11 +82,11 @@ The following docker-compose.yml recipe shows how you can easily start your own 
 
 ```
 postgres:
-  image: postgres:9.6.1-alpine
+  image: postgres:alpine
   environment:
     - POSTGRES_DB=taiga
     - POSTGRES_USER=taiga
-    - POSTGRES_PASSWORD=3MwR95cj9YAP7zm2lKrU
+    - POSTGRES_PASSWORD=changeme
   volumes:
     - taiga-db:/var/lib/postgresql/data
 
@@ -101,7 +101,7 @@ taiga:
     - TAIGA_DB_HOST=postgres
     - TAIGA_DB_NAME=taiga
     - TAIGA_DB_USER=taiga
-    - TAIGA_DB_PASSWORD=3MwR95cj9YAP7zm2lKrU
+    - TAIGA_DB_PASSWORD=changeme
     - TAIGA_SECRET_KEY=<YOUR_SECRET_KEY_HERE>
     - TAIGA_PUBLIC_REGISTER_ENABLED=true
     - TAIGA_BACKEND_DEBUG=false
