@@ -1,4 +1,4 @@
-# taiga-docker
+# [UNMAINTAINED] taiga-docker
 
 A small Docker Image for the open-source project management software Taiga.io
 - The recipe is based on the existing recipe
